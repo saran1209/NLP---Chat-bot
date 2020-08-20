@@ -1,2 +1,4 @@
 # NLP---Chat-bot
-NLP Chatbot web application. This was my master's Project.
+Masters Project - NLP Chat bot for college Enquiry.
+# DEMO
+<img src="demo.gif" alt="">
