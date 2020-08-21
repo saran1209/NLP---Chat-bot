@@ -29,9 +29,9 @@ Other requirments :
 <li>Jinja2==2.11.1</li>
 <li>MarkupSafe==1.1.1</li></li>
 <li>Werkzeug==1.0.0</li>
+</ol>
 <h1>Downloads </h1>
 Download word vectors
-
 <pre><h3>Download GloVe (V1) or fastText (V2) vectors:</h3>
 mkdir GloVe
 curl -Lo GloVe/glove.840B.300d.zip http://nlp.stanford.edu/data/glove.840B.300d.zip
@@ -56,4 +56,32 @@ unzip fastText/crawl-300d-2M.vec.zip -d fastText/</pre>
 <li>Models.py - Facebook infersent encoder files ( please check with https://github.com/facebookresearch/InferSent  to see if they have updates Models.py file)</li>
         <li>Tfidf.py - Finds the relevant sentences to respond </li>
         </ul>
-<title> References </title>
+<h1> References </h1>
+<li>Denny Britz. Deep learning for chatbots. WildML Artificial Intelligence,
+Deep Learning, and NLP http://www.wildml.com/2016/04/
+deep-learning-for-chatbots-part-1-introduction/. </li>
+<li>Alexis Conneau, Douwe Kiela, Holger Schwenk, Loïc Barrault, and Antoine Bordes. Supervised
+learning of universal sentence representations from natural language inference
+data. In Proceedings of the 2017 Conference on Empirical Methods in Natural Language
+Processing, pages 670–680, Copenhagen, Denmark, September 2017. Association
+for Computational Linguistics. </li>
+<li>Menal Dahiya. A tool of conversation: Chatbot. INTERNATIONAL JOURNAL OF
+COMPUTER SCIENCES AND ENGINEERING, 5, 2017. </li>
+<li>G. A. Dalaorao, A. M. Sison, and R. P. Medina. Integrating collocation as tf-idf enhancement
+to improve classification accuracy. In 2019 IEEE 13th International Conference on
+Telecommunication Systems, Services, and Applications (TSSA), pages 282–285, 2019. </li>
+<li> Armand Joulin, Edouard Grave, Piotr Bojanowski, Matthijs Douze, Hérve Jégou, and
+Tomas Mikolov. Fasttext.zip: Compressing text classification models. arXiv preprint
+arXiv:1612.03651, 2016. </li>
+<li>Caglar Gulcehre Dzmitry Bahdanau Fethi Bougares Holger Schwenk Yoshua Bengio
+Kyunghyun Cho, Bart van Merrienboer. Learning phrase representations using rnn
+encoder-decoder for statistical machine translation. arXiv:1406.1078 https://arxiv.
+org/abs/1406.1078, 2006. </li>
+<li>A. R. Lahitani, A. E. Permanasari, and N. A. Setiawan. Cosine similarity to determine
+similarity measure: Study case in online essay assessment. In 2016 4th International
+Conference on Cyber and IT Service Management, pages 1–6, 2016. </li>
+<li> Ojas Wankhade Pradnya Mehta Sagar Pawar, Omkar Rane. A web based college enquiry
+chatbot with results. International Journal of Innovative Research in Science,
+Engineering and Technology, 7, 2018.</li>
+<li>JosephWeizenbaum. Computer power and human reason: From judgment to calculation.
+pages 367–375, 1976. </li>
