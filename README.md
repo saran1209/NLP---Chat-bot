@@ -23,14 +23,15 @@ This code is written in python. Dependencies include:
 
 Other requirments : 
 <ol>
-<li> Click==7.0
-Flask==1.1.1
-itsdangerous==1.1.0
-Jinja2==2.11.1
-MarkupSafe==1.1.1
-Werkzeug==1.0.0
-# Downloads 
+<li> Click==7.0</li>
+<li>Flask==1.1.1</li>
+<li>itsdangerous==1.1.0</li>
+<li>Jinja2==2.11.1</li>
+<li>MarkupSafe==1.1.1</li></li>
+<li>Werkzeug==1.0.0</li>
+<h1>Downloads </h1>
 Download word vectors
+<div style="overflow: auto; width:300px; heigh:300px>
 Download GloVe (V1) or fastText (V2) vectors:
 <prep>mkdir GloVe
 curl -Lo GloVe/glove.840B.300d.zip http://nlp.stanford.edu/data/glove.840B.300d.zip
@@ -38,3 +39,4 @@ unzip GloVe/glove.840B.300d.zip -d GloVe/
 mkdir fastText
 curl -Lo fastText/crawl-300d-2M.vec.zip https://dl.fbaipublicfiles.com/fasttext/vectors-english/crawl-300d-2M.vec.zip
 unzip fastText/crawl-300d-2M.vec.zip -d fastText/</prep>
+            </div>
