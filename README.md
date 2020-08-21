@@ -13,13 +13,17 @@ Assistant would be able to solve the query in seconds. Updating the chat bot wil
 compared to updating on web page or catalog. Admin would be able to update the document
 without any programming knowledge. This project will improve the user experience and will
 be available 24/7 to solve queries. </p>
-# Requirments
+<h1> Requirments </h1>
 This code is written in python. Dependencies include:
-Python 3
-Pytorch (recent version)
-NLTK >= 3
+<ol>
+<li> Python 3 </li>
+<li> Pytorch (recent version)</li>
+<li> NLTK >= 3</li>
+</ol>
+
 Other requirments : 
-Click==7.0
+<ol>
+<li> Click==7.0
 Flask==1.1.1
 itsdangerous==1.1.0
 Jinja2==2.11.1
