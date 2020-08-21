@@ -49,5 +49,10 @@ unzip fastText/crawl-300d-2M.vec.zip -d fastText/</pre>
 <li>Go to Command prompt and type pip install nltk and press enter</li>
 <li>Go to Command prompt and type conda install pytorch torchvision cudatoolkit=10.2-c pytorch</li>
 <li>Go to Command prompt and type pip install flask</li>
-       </ul>
-
+ </ul>
+<h1>File Details </h1>
+<ul>
+        <li>app.py - Includes Code for scarpping, Summarization and Vectorization. </li>
+<li>Models.py - Facebook infersent encoder files ( please check with https://github.com/facebookresearch/InferSent  to see if they have updates Models.py file)</li>
+        <li>Tfidf.py - Finds the relevant sentences to respond </li>
+        </ul>
