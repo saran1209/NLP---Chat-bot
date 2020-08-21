@@ -56,3 +56,4 @@ unzip fastText/crawl-300d-2M.vec.zip -d fastText/</pre>
 <li>Models.py - Facebook infersent encoder files ( please check with https://github.com/facebookresearch/InferSent  to see if they have updates Models.py file)</li>
         <li>Tfidf.py - Finds the relevant sentences to respond </li>
         </ul>
+<title> References </title>
