@@ -2,7 +2,7 @@
 Masters Project - NLP Chat bot for college Enquiry.
 # DEMO
 <img src="demo.gif" alt="">
-# Abstract
+# ABSTRACT
 <p> This project focuses on Creating Virtual Query answering system for Colleges. This
 System is a Web Application which solves user’s queries from Documents provided by the
 admin. Natural language processing which is a branch of Artificial Intelligence has played
