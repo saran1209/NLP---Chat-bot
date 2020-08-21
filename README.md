@@ -41,4 +41,13 @@ mkdir fastText
 curl -Lo fastText/crawl-300d-2M.vec.zip https://dl.fbaipublicfiles.com/fasttext/vectors-english/crawl-300d-2M.vec.zip
 unzip fastText/crawl-300d-2M.vec.zip -d fastText/</pre>
         
- 
+<h1>Installation and Importing </h1>
+<p>Natural language Tool Kit</p>
+<ul>
+<li>Download the latest version of Python for Windows from below link https://www.python.org/downloads</li>
+<li>Install NLTK - Python download</li>
+<li>Go to Command prompt and type pip install nltk and press enter</li>
+<li>Go to Command prompt and type conda install pytorch torchvision cudatoolkit=10.2-c pytorch</li>
+<li>Go to Command prompt and type pip install flask</li>
+       </ul>
+
