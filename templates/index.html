@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style type="text/css">
+  body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+
+.header {
+  text-align: center;
+  position: relative;
+  opacity: 0.80;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header{
+  background-image: url("/static/images/look.png") ;
+  min-height: 500px;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #0C1FE8;
+  color: #10DEFF;
+}
+
+.navbar a {
+  position: relative;
+  float: left;
+  display: block;
+  color: #10DEFF;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #370DFF;
+  color: #10DEFF;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #8279E8;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.footer-side {
+  flex: 50%;
+  background-color:#A9A9A9;
+  padding: 20px;
+}
+.footer-main {
+  flex: 50%;
+  background-color: #A9A9A9;
+  padding: 20px;
+}
+
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+#chatbox
+{
+  background: url("/static/images/chatbotback.jpg");
+  background-repeat: repeat;
+  padding: 15px;
+  margin: 0px 0 0px 0;
+  border: currentColor;
+
+  overflow-y:scroll;
+  min-height: 400px;
+  overflow-y:scroll;
+ }
+#userInput {
+
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+#textInput {
+  background-color: white;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 50px;
+}
+#buttonInput {
+padding: 2px;
+font-family: monospace;
+font-size: 17px;
+}
+.userText {
+color: white;
+font-family: monospace;
+font-size: 14px;
+text-align: right;
+line-height: 30px;
+}
+.userText span {
+background-color: #4caf50;
+padding: 5px;
+border-radius: 2px;
+}
+.usertime{
+color: gray;
+font-family: monospace;
+font-size: 12px;
+text-align: right;
+line-height: 5px;
+}
+.usertime span{
+  padding: 3px;
+  border-radius: 2px;
+}
+.chattime{
+color: gray;
+font-family: monospace;
+font-size: 12px;
+text-align: left;
+line-height: 5px;
+}
+.chatText span{
+  padding: 3px;
+  border-radius: 2px;
+}
+.botText {
+color: white;
+font-family: monospace;
+font-size: 14px;
+text-align: left;
+line-height: 30px;
+}
+.botText span {
+background-color: #ffc107;
+padding: 5px;
+border-radius: 2px;
+}
+#tidbit {
+position:absolute;
+bottom:0;
+right:0;
+width: 300px;
+}
+.open-button {
+  background-color: #0006F8;
+  color: white;
+  font-size: 16px;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+.chat-popup {
+  max-width: 300px;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+.cancel {
+  background-color: red;
+}
+.textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+.scrol{
+   overflow-y: hidden;
+   right: 0px;
+   height: 200px
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="header">
+</div>
+
+
+{% block mains %}
+<div class="navbar">
+  <a href="/">HOME</a>
+  <a href="login" class="right">LOGIN</a>
+
+</div>
+<button class="open-button" onclick="openForm()">Chat<img src="https://img.icons8.com/windows/32/000000/chatbot.png"/></button>
+<div class="chat-popup" id="myForm">
+<div id="chatbox" class = "scrol">
+<p class="botText"><span>Chatbot: I am Suny Polytechnic Chat assistant, You can ask me anything about School. If you wanna Exit, Please type bye"</span></p>
+</div>
+<div id="userInput">
+<input id="textInput" type="text" name="msg" class="textare" placeholder="Message">
+<input id="buttonInput" type="submit" value="Send" class="btn">
+<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+</div></div>
+<div class="row">
+  <div class="main">
+
+    <h2>Welcome to SUNY POLYTECHNIC </h2>
+    <img src="/static/images/clg.jpg" height="350px" , width="700x">
+    <p>The State University of New York Polytechnic Institute (SUNY Polytechnic Institute or SUNY Poly) is a public university with campuses in the town of Marcy in the Utica–Rome metropolitan area and Albany, New York. It is part of the State University of New York (SUNY) system. Founded in 1966 using classrooms at a primary school, what became SUNY Poly is New York's public polytechnic college.The Marcy campus, formerly the SUNY Institute of Technology, has a Utica, New York mailing address and was established in 1987. The Albany campus was formerly a component of the University at Albany, and was established in January 2003.
+
+SUNY Poly is accredited by the Middle States Commission on Higher Education. The university offers over 25 bachelor's degrees, 18 graduate level degrees, and five doctoral degrees within six different colleges. SUNY Poly students come from across the state of New York, throughout the United States, and more than twenty other nations, with more than 25,000 alumni.
+
+</p>
+    <br>
+    <h2>SUNY POLYTECHNIC INSTITUTE</h2>
+    <h5>Academics</h5>
+    <img src="/static/images/Albany.jpg" height="350px" , width="700x">
+    <li>College of Arts & Sciences</li>
+    <li>College of Business Managment</li>
+    <li>College Of Engineering</li>
+    <li>College of Health Sciences</li>
+    <li>College of Nanoscale Science and Engineering</li>
+  </div>
+</div>
+{% endblock %}
+<div class="footer-row">
+  <div class="footer-side">
+      <h4>Contact Us</h4>
+      <p>
+      <i class="small material-icons" >call</i>    (518) 437-8686<br>
+       <i class="small material-icons ">location_on</i>     257 Fuller Rd, Albany, NY 12203<br>
+          <i class="small material-icons ">mail</i>    gmail.sunypoly.edu
+      </p>
+  </div>
+  <div class="footer-main">
+<h4>About Us</h4>
+      <p>
+       Originally a graduate and upper-division (transfer) institution, SUNY Poly offered classes in temporary locations throughout Utica and at extension sites for several years until the first buildings were constructed on the permanent Marcy campus in the 1980s.[9] In 2002, the SUNY Board of Trustees approved a mission change, enabling SUNY Poly to offer upper-division programs in professional, technological, and applied studies. In 2003, SUNY Poly admitted its first class of freshmen, becoming a four-year institution.[10] This class graduated in May 2007.
+      </p>
+
+  </div>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+function getBotResponse() {
+var rawText = $("#textInput").val();
+var userHtml = '<p class="userText"><span>' + rawText + '</span></p>';
+$("#textInput").val("");
+$("#chatbox").append(userHtml);
+var userDate = new Date();
+var userNew = userDate.toLocaleTimeString();
+var userTime = '<p class="usertime"<span>'+ userNew +'</span></p>';
+$('#chatbox').append(userTime);
+document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+$.get("/get", { msg: rawText }).done(function(data) {
+var botHtml = '<p class="botText"><span>' + data + '</span></p>';
+$("#chatbox").append(botHtml);
+var chatDate = new Date();
+var chatnew = chatDate.toLocaleTimeString();
+var chatTime = '<p class="chattime"<span>'+ chatnew +'</span></p>';
+$('#chatbox').append(chatTime);
+document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+});
+}
+$("#textInput").keypress(function(e) {
+if(e.which == 13) {
+getBotResponse();
+}
+});
+$("#buttonInput").click(function() {
+getBotResponse();
+})
+</script>
+
+</body>
+</html>
